@@ -3,3 +3,4 @@
 - adobe XD
 - vs code
 	- indent-rainbow
+	- Lorem Ipsum
