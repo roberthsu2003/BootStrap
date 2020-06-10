@@ -7,7 +7,7 @@
 	- 一個Row內使用多行(equal_window_multi_line.html)
 	- 在一列內設定一欄為自訂寬度(setting_one_column_width.html)
 	- 依內容改變寬度的欄位(variable_width_content.html)
-## 5個預設回應階層
+## 5個回應階層的設定方法
 ### 回應所有的中斷點 
 - .col
 - .col-*
@@ -20,4 +20,16 @@
 - col-md-*
 - col-6
 - col-6 col-md-*
+### margin 和 padding
+- mx 左右margin
+- px 左右padding
+- py 上下padding
+- border 邊框
+- bg-light 顏色
+- gutters.html
+### 由列設定欄位數
+- .row-cols-*
+- rowColumns.html
+- rowColumns1.html
+- rowColumns2.html
 
