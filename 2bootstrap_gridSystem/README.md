@@ -32,4 +32,10 @@
 - rowColumns.html
 - rowColumns1.html
 - rowColumns2.html
-
+## 對齊
+### 垂直對齊
+- align-items-start
+- align-items-center
+- align-items-end
+- vertialAlignment.html
+### 水平對齊
