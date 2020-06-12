@@ -11,16 +11,22 @@
 8. 縮寫 abbr 
 9. 引文 class=blockquote  
 10. 出處 footer class="blockquote-footer" 
-11. 對齊 class="text-center)  
+11. 對齊 class="text-center  
 12. 列表 - 無修飾 class="list-unstyled"
 13. 列表 - 無換行class="list-inline"  
 14. 說明表單  
 
-### 輸出特殊符號
+## 輸出特殊符號
 ### code.html
 1. 行內程式碼 code 
 2. 區塊程式碼 pre code  
 3. 變數 var 
 4. 鍵盤按鍵表示 kbd 
 5. 輸出表示samp  
+
+## 圖片
+### images.html
+1. 自動改變大小圖片(class=img-fluid)
+2. 有相框的圖片(class=img-thumbnail)
+3. 對齊圖片
 

@@ -4,3 +4,5 @@
 - vs code
 	- indent-rainbow
 	- Lorem Ipsum
+	- Lorem Picsum photos snippets
+
