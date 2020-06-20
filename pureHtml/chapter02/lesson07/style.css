@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+/*視窗底色設定*/
+body{
+	background-color:#fbf9cc;
+}
+
+/*連結顏色設定*/
+a{
+	color: #df4839;
+}
+
+a:hover{
+	color: #ff705b;
+}
+
+/*頁面標題設定*/
+h1{
+	color: #6fbb9a;
+	text-align: center;
+	font-size: 250%;
+}
+
+h1 span{
+	color: #d0e35b;
+}
+
+/*次標題設定*/
+h2{
+	color: #6fbb9a;
+	border: #94c8b1 1px dotted;
+	border-left: #d0e35b 10px solid;
+	padding: 5px 20px;
+	margin-bottom: 0;
+}
+
+/*內容標題設定*/
+dt{
+	font-weight: bold;
+}
+
+/*引言區塊設定*/
+#lead{
+	border-top: #6fbb9a 1px dotted;
+	border-bottom: #6fbb9a 1px dotted;
+	padding: 15px;
+	text-align: center;
+}
+
+/*「更多介紹」連結設定*/
+.more{
+	text-align: right;
+}
+
+/*花色、性別（共通資料）*/
+.cat-type{
+	font-size: 80%;
+	font-weight: normal;
+}
+
+/*依性別區分顏色*/
+.cat-type.male{
+	color: #2793a7;
+}
+
+.cat-type.female{
+	color: #df972f;
+}

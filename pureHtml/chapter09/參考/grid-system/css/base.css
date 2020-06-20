@@ -1,0 +1,608 @@
+﻿@charset "utf-8";
+/*
+=======================================
+	Reset CSS
+=======================================
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, main, menu, nav, section, summary,
+time, mark, audio, video{
+	margin:0;
+	padding:0;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,main,menu,nav,section{
+	display:block;
+}
+
+html{
+	-webkit-text-size-adjust: 100%;
+}
+
+body{
+	color: #59220d;
+	line-height: 1.5;
+	font-size: 14px;
+	font-family: sans-serif;
+}
+
+img{
+	border: 0;
+	max-width: 100%;
+	height: auto;
+}
+
+ul,ol{
+	list-style-type: none;
+}
+
+table {
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+
+img, input, select, textarea { 
+	vertical-align: middle;
+}
+
+a{
+	color: #59220d;
+	transition: 0.5s;
+}
+a:hover{
+	color: #d53e04;
+}
+
+a:hover img{
+	opacity: 0.7;
+}
+
+/*Icon Fonts*/
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?-2ppakl');
+	src:url('fonts/icomoon.eot?#iefix-2ppakl') format('embedded-opentype'),
+		url('fonts/icomoon.ttf?-2ppakl') format('truetype'),
+		url('fonts/icomoon.woff?-2ppakl') format('woff'),
+		url('fonts/icomoon.svg?-2ppakl#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+	content: "\e600";
+}
+.icon-twitter:before {
+	content: "\e601";
+}
+.icon-pinterest:before {
+	content: "\e602";
+}
+
+
+/*
+=========================================
+	Base Layout
+=========================================
+*/
+/*ALL and Smart Phone*/
+.container,
+.container-ng{
+	max-width: 960px;
+	margin: 0 auto;
+}
+.container:after,
+.container-ng:after{
+	content:"";
+	display: block;
+	clear:both;
+}
+
+/*有間隔*/
+.grid1,.grid2,.grid3,.grid4,.grid5,.grid6,
+.grid7,.grid8,.grid9,.grid10,.grid11,.grid12{
+	width: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
+	box-sizing: border-box;
+	float:left;
+}
+
+/*無間隔*/
+.container-ng .grid1,.container-ng .grid2,
+.container-ng .grid3,.container-ng .grid4,
+.container-ng .grid5,.container-ng .grid6,
+.container-ng .grid7,.container-ng .grid8,
+.container-ng .grid9,.container-ng .grid10,
+.container-ng .grid11,.container-ng .grid12{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/*無兩端間隔*/
+.full{
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+/*Fluid Grid*/
+@media screen and (min-width: 640px) {
+	.grid1,
+	.container-ng .grid1{width: 8.3333%;}
+	.grid2,
+	.container-ng .grid2{width: 16.6666%;}
+	.grid3,
+	.container-ng .grid3{width: 25%;}
+	.grid4,
+	.container-ng .grid4{width: 33.3333% !important;}
+	.grid5,
+	.container-ng .grid5{width: 41.6666%;}
+	.grid6,
+	.container-ng .grid6{width: 50%;}
+	.grid7,
+	.container-ng .grid7{width: 58.3333%;}
+	.grid8,
+	.container-ng .grid8{width: 66.6666%;}
+	.grid9,
+	.container-ng .grid9{width: 75%;}
+	.grid10,
+	.container-ng .grid10{width: 83.3333%;}
+	.grid11,
+	.container-ng .grid11{width: 91.6666%;}
+	.grid12,
+	.container-ng .grid12{width: 100%;}
+	
+	.full{
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+
+/*
+=========================================
+	Modules（Block）
+=========================================
+*/
+
+/*header
+--------------------*/
+#header{
+	padding: 12.5%;
+	background: url(../img/bg_header.jpg) center top no-repeat;
+	background-size: cover;
+	text-align: center;
+	position: relative;
+}
+#header:before{
+	content: "";
+	display: block;
+	width: 33.75%;
+	height: 55.5555%;
+	max-width: 220px;
+	max-height: 200px;
+	background: url(../img/bg_race.png) no-repeat;
+	background-size: contain;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+@media screen and (min-width: 640px){
+	#header{
+		padding: 80px 0;
+		text-align: left;
+	}
+}
+
+/*global navigation
+--------------------*/
+#gnav{
+	background: #d8c7a0;
+}
+#gnav li{
+	width: 25%;
+	text-align: center;
+}
+#gnav a{
+	display: block;
+	padding: 15px 0;
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	font-family: 'Cardo', serif;
+	font-style: italic;
+}
+#gnav a:hover{
+	background: #ecdfc2;
+}
+@media screen and (min-width: 640px){
+	#gnav{
+		margin-bottom: 20px;
+	}
+}
+
+/*main
+--------------------*/
+#main{
+	margin-bottom: 100px;
+}
+
+/*Google Map
+--------------------*/
+.map{
+	border: #d8c7a0 1px solid;
+	position: relative;
+	padding-bottom: 50%;
+}
+.map iframe{
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+}
+
+
+/*introduction
+--------------------*/
+#intro{
+	margin-bottom: 40px;
+}
+.intro-text{
+	margin-bottom: 20px;
+	font-size: 114%;
+}
+.intro-map .map{
+	margin-bottom: 20px;
+}
+.intro-map address{
+	text-align: center;
+	font-style: normal;
+	font-size: 12px;
+}
+.intro-map address p+p{
+	margin-top: 10px;
+}
+
+.btn-tel{
+	display: inline-block;
+	width: 70%;
+	max-width: 200px;
+	padding: 8px 0;
+	border-radius: 2em;
+	background: #d8c7a0;
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+}
+@media screen and (min-width: 640px){
+	.intro-text{
+		width: 57.7777%;
+		float: left;
+		line-height: 1.8;
+	}
+	.intro-map{
+		width: 40%;
+		float: right;
+	}
+	.intro-map .map{
+		margin-bottom: 10px;
+	}
+	.intro-map address{
+		text-align: left;
+	}
+	.intro-map address p+p{
+		margin-top: 0;
+	}
+	
+	.btn-tel{
+		display: inline;
+		width: auto;
+		max-width: none;
+		padding: 0;
+		background: none;
+		color: inherit;
+		font-size: inherit;
+	}
+	.btn-tel:before{
+		content:"TEL：";
+	}
+}
+
+/*Pickup Menu
+--------------------*/
+.menu-text{
+	padding: 15px;
+	text-align: center;
+}
+@media screen and (min-width: 640px){
+	#menu{
+		margin-bottom:40px;
+	}
+
+}
+
+/*info
+--------------------*/
+#info{
+	margin-bottom: 20px;
+}
+
+.info-list dt{
+	clear: left;
+	float: left;
+	width: 7em;
+	padding: 10px 0;
+	border-top: #d8c7a0 1px dotted;
+}
+.info-list dd{
+	padding: 10px 0;
+	border-top: #d8c7a0 1px dotted;
+	overflow: hidden;
+}
+.info-list :first-of-type{
+	border-top: none;
+}
+
+
+/*staff
+--------------------*/
+#staff{
+	margin-bottom: 40px;
+	text-align: center;
+}
+.staff-photo{
+	width: 50%;
+	margin: 0 auto 20px;
+}
+.staff-photo img{
+	border: #d8c7a0 5px solid;
+}
+.staff-heading{
+	display: inline-block;
+	width: 60%;
+	padding: 8px 10px;
+	margin-bottom: 10px;
+	border-radius: 2em;
+	background: #d8c7a0;
+	color: #fff;
+	font-size: 14px;
+}
+@media screen and (min-width: 640px){
+	.staff-photo{
+		float: left;
+		width: 35.7142%;
+		margin-bottom: 0;
+	}
+	.staff-msg{
+		float: right;
+		width: 59.5238%;
+	}
+	.staff-heading{
+		width: 80%;
+	}
+}
+
+/*banner
+--------------------*/
+.banner-list{
+	width: 83.3333%;
+	max-width: 300px;
+	margin: 0 auto;
+}
+.banner-list li{
+	margin-bottom: 20px;
+	
+}
+.banner-list li img{
+	border: #fff 5px solid;
+	box-sizing: border-box;
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+@media screen and (min-width: 640px){
+	#banner{
+		clear: both;
+	}
+	.banner-list{
+		width: 100%;
+		max-width: none;
+		text-align: left;
+	}
+}
+
+/*footer
+--------------------*/
+#footer{
+	padding: 20px 10px;
+	background: #d8c7a0;
+}
+
+.footer-photo{
+	width: 83.3333%;
+	margin: 0 auto 20px;
+}
+.footer-photo img{
+	border: #fff 5px solid;
+}
+
+.footer-info-title{
+	width: 33.3333%;
+	min-width: 100px;
+	margin-bottom: 15px;	
+}
+
+.footer-info-list{
+	margin-bottom: 20px;
+}
+.footer-info-list dt{
+	clear: left;
+	float: left;
+	width: 7em;
+	margin-bottom: 10px;
+}
+.footer-info-list dd{
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+.sns{
+	margin-bottom: 15px;
+}
+.sns li{
+	display: inline-block;
+}
+.sns a{
+	display: block;
+	padding: 10px 20px;
+	background: #fff;
+	color: #d8c7a0;
+	border-radius: 5px;
+	font-size: 24px;
+	text-decoration: none;
+}
+.sns a:hover{
+	opacity: 0.7;
+}
+
+.pagetop{
+	width: 14.0625%;
+	min-width: 45px;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+}
+@media screen and (min-width: 640px){
+	.footer-photo{
+		margin-bottom: 20px;
+	}
+	.footer-info{
+		margin-bottom: 20px;
+	}
+	.sns{
+		text-align: center;
+	}
+	.copyright{
+		text-align: center;
+	}
+}
+
+/*
+=========================================
+	Modules（Parts）
+=========================================
+*/
+
+/*Heading
+--------------------*/
+.heading{
+	margin-bottom: 15px;
+	border-bottom: #4d941a 1px solid;
+	color: #4d941a;
+	font-size: 20px;
+	font-weight: normal;
+	font-family: 'Cardo', serif;
+	font-style: italic;
+	overflow: hidden;
+	position: relative;
+}
+.heading .more{
+	float: right;
+	display: inline-block;
+	padding: 5px 5px 5px 10px;
+	background: #4d941a;
+	border-radius: 2em;
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 1;
+}
+.heading .more:hover{
+	opacity: 0.7;
+}
+.heading .more:after{
+	content: "";
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin-top: 2px;
+	margin-left: 5px;
+	border: transparent 5px solid;
+	border-left-color: #fff;
+}
+
+/*Style
+--------------------*/
+.bg-check{
+	padding: 20px;
+	background: url(../img/bg_check.png);
+}
+
+
+/*
+=========================================
+	Utilities
+=========================================
+*/
+
+/* 邊界
+---------------------------------*/
+.mb0{ margin-bottom: 0 !important;}
+.mb5{ margin-bottom: 5px !important;}
+.mb10{ margin-bottom: 10px !important;}
+.mb15{ margin-bottom: 15px !important;}
+.mb20{ margin-bottom: 20px !important;}
+.mb25{ margin-bottom: 25px !important;}
+.mb30{ margin-bottom: 30px !important;}
+.mb35{ margin-bottom: 35px !important;}
+.mb40{ margin-bottom: 40px !important;}
+.mb45{ margin-bottom: 45px !important;}
+.mb50{ margin-bottom: 50px !important;}
+
+/* 水平對齊
+---------------------------------*/
+.ta-l{ text-align: left; }
+.ta-r{ text-align: right; }
+.ta-c{ text-align: center; }
+
+
+/* 浮動／清除浮動
+---------------------------------*/
+.fl{ float:left; }
+.fr{ float:right; }
+.fl-img{ float: left; margin-right: 10px; margin-bottom: 10px;}
+.fr-img{ float: right; margin-left: 10px; margin-bottom: 10px;}
+.clear{ clear:both; }
+
+/* clearfix */
+.clearfix:after {
+	content: ""; 
+	display: block; 
+	clear: both; 
+}
+.clearfix{
+	zoom:1;
+}

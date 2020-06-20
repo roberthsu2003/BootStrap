@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8">
+<title>範例：CSS3選擇器</title>
+<link href="css/base.css" rel="stylesheet" media="all">
+<link href="css/style.css" rel="stylesheet" media="all">
+<!--[if lt IE 9]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+<![endif]-->
+</head>
+<body>
+<h1>CSS3 Selector</h1>
+
+<section  class="category attr">
+<h2>Attribute Selector【屬性選擇器】</h2>
+
+<section>
+<h3>選擇class屬性<em>「以xx開頭」</em>的元素</h3>
+<ul class="sample">
+<li class="STARTxx">class="STARTxx"</li>
+<li class="xxSTART">class="xxSTART"</li>
+<li class="xxSTARTxx">class="xxSTARTxx"</li>
+</ul>
+</section>
+
+<section>
+<h3>選擇class屬性<em>「以xx結尾」</em>的元素</h3>
+<ul class="sample">
+<li class="ENDxx">class="ENDxx"</li>
+<li class="xxEND">class="xxEND"</li>
+<li class="xxENDxx">class="xxENDxx"</li>
+</ul>
+</section>
+
+<section>
+<h3>選擇class屬性<em>「包含xx」</em>的元素</h3>
+<ul class="sample">
+<li class="CNTxx">class="CNTxx"</li>
+<li class="xxCNT">class="xxCNT"</li>
+<li class="xxCNTxx">class="xxCNTxx"</li>
+</ul>
+</section>
+
+<section>
+<h3 class="practice">依連結類型顯示對應圖示</h3>
+<ul class="sample">
+<li><a href="index.html">一般連結</a></li>
+<li><a href="http://www.google.com/">外部網站連結</a></li>
+<li><a href="img/file01.pdf">開啟PDF檔的連結</a></li>
+</ul>
+</section>
+</section>
+
+<section class="category pseudo">
+<h2>Pseudo Class Selector【虛擬類別】</h2>
+
+<section>
+<h3>包含所有子元素的<em>「～child」</em>型虛擬類別</h3>
+<ul class="sample child">
+<li>child1 (first)</li>
+<li>child2</li>
+<li>child3</li>
+<li>child4</li>
+<li>child5</li>
+<li>child6</li>
+<li>child7 (last)</li>
+</ul>
+</section>
+
+<section>
+<h3>只包含相同元素的<em>「～of-type」</em>型虛擬類別</h3>
+<div class="sample ofType">
+<h4>heading1 (h4)</h4>
+<p>paragraph1</p>
+<h4>heading2 (h4)</h4>
+<p>paragraph2</p>
+<h5>heading3 (h5)</h5>
+<p>paragraph3</p>
+</div>
+</section>
+
+<section>
+<h3 class="practice no1">雙色條紋表格</h3>
+<table class="stripe">
+<tr><td>White</td><td>White</td></tr>
+<tr><td>Gray</td><td>Gray</td></tr>
+<tr><td>White</td><td>White</td></tr>
+<tr><td>Gray</td><td>Gray</td></tr>
+</table>
+<h3 class="practice no2">最後一列以紅字顯示</h3>
+<dl class="lastRed">
+<dt>Item1</dt>
+<dd>XXXXXXXXXX</dd>
+<dt>Item2</dt>
+<dd>XXXXXXXXXX</dd>
+<dt>Item3</dt>
+<dd>XXXXXXXXXX</dd>
+</dl>
+</section>
+</section>
+
+<section  class="category other">
+<h2>Other Pseudo Class Selector【其它虛擬類別】</h2>
+
+<section>
+<h3>選擇最後一列以外的部份</h3>
+<ul class="sample nots">
+<li>list1</li>
+<li>list2</li>
+<li>list3</li>
+<li>list4</li>
+<li>list5</li>
+</ul>
+</section>
+
+<section>
+<h3>開啟連結</h3>
+<dl class="sample target">
+<dt><a href="#panel1">MENU1</a></dt>
+<dd id="panel1">panel1 panel1 panel1 panel1 panel1 panel1 panel1 panel1 panel1</dd>
+<dt><a href="#panel2">MENU2</a></dt>
+<dd id="panel2">panel2 panel2 panel2 panel2 panel2 panel2 panel2 panel2 panel2</dd>
+<dt><a href="#panel3">MENU3</a></dt>
+<dd id="panel3">panel3 panel3 panel3 panel3 panel3 panel3 panel3 panel3 panel3</dd>
+</dl>
+</section>
+
+<section>
+<h3>依表單元件狀態切換Label樣式</h3>
+<form class="ui">
+<input type="radio" name="radio" id="radio1" value="1">
+<label for="radio1">選項 1</label>
+<input type="radio" name="radio" id="radio2" value="2">
+<label for="radio2">選項 2</label>
+<input type="radio" name="radio" id="radio3" value="3" disabled>
+<label for="radio3">選項 3</label>
+</form>
+</section>
+</section>
+
+</body>
+</html>
