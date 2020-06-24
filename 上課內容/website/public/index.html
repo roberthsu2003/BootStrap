@@ -11,24 +11,26 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <style>
-        .jumbotron{
+        .jumbotron {
             background-color: #dbc17e;
         }
-        .jumbotron h1{
+
+        .jumbotron h1 {
             font-family: 'Noto Sans TC', sans-serif;
         }
 
-        .jumbotron p{
+        .jumbotron p {
             font-family: 'Noto Sans TC', sans-serif;
         }
 
-        .list-group-item{
+        .list-group-item {
             background-color: bisque;
         }
+
         @media (min-width: 576px) {
-            .jumbotron{
-            background-color: #7edbb7;
-        } 
+            .jumbotron {
+                background-color: #7edbb7;
+            }
         }
     </style>
     <title>我家的貓咪</title>
@@ -37,9 +39,9 @@
 <body>
     <div class="container">
 
-        <div class="jumbotron" >
+        <div class="jumbotron">
             <h1 class="display-4 text-center font-weight-bolder">我家的貓咪</h1>
-            <p class="lead text-center">來介紹一下我家的偶像貓咪們！</p>            
+            <p class="lead text-center">來介紹一下我家的偶像貓咪們！</p>
         </div>
 
         <ul class="list-group list-group-horizontal-md text-md-center">
@@ -47,57 +49,61 @@
             <li class="list-group-item flex-fill"><a href="#">飼主介紹</a></li>
             <li class="list-group-item flex-fill"><a href="#">貓咪照片大募集</a></li>
         </ul>
-        <h2 class="mt-5 h4 font-weight-bolder" style="font-family: 'Noto Sans TC', sans-serif;">我家貓咪的介紹</h2>    
-        <section id="cats" class="row mt-3">           
+        <h2 class="mt-5 h4 font-weight-bolder" style="font-family: 'Noto Sans TC', sans-serif;">我家貓咪的介紹</h2>
+        <section id="cats" class="row mt-3">
 
-            <section id="subaru" class="col-md">
-                <h3>●小昂（白底棕灰虎斑・公）</h3>
-                <p>大眼大耳的超級帥哥，叫聲也相當可愛。可能因為童年時期是在套房渡過，對其它貓咪沒什麼興趣，個性相當自我。
-                    最喜歡在瓦楞紙箱的邊角或柱子磨爪子。</p>
+            <section class="card col-md" id="subaru"">
+                <img src=" ..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="card-title">小昂（白底棕灰虎斑・公）</h3>
+                    <p class="card-text">大眼大耳的超級帥哥，叫聲也相當可愛。可能因為童年時期是在套房渡過，對其它貓咪沒什麼興趣，個性相當自我。
+                        最喜歡在瓦楞紙箱的邊角或柱子磨爪子。</p>
+                    <dl>
+                        <dt>特徵：</dt>
+                        <dd>大眼大耳與彎曲的尾巴。</dd>
+                        <dt>個性：</dt>
+                        <dd>自我。</dd>
+                    </dl>
+                    <p>更多介紹→</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </section>
 
-                ［照片］
-                <dl>
-                    <dt>特徵：</dt>
-                    <dd>大眼大耳與彎曲的尾巴。</dd>
-                    <dt>個性：</dt>
-                    <dd>自我。</dd>
-                </dl>
+            <section class="card col-md" id="subaru" ">
+                <img src=" ..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="card-title">●暮子（灰貓・母）</h3>
+                    <p class="card-text">剛出生時，有類似美國短毛貓那樣的花紋，沒想到長大後變成單純只是隻灰貓。可能有混到一點長毛種，毛非常膨鬆，因此被我家人戲稱是「灰毛球」。
+                        從她偏沙啞的聲音和成熟的臉孔，很難想像她其實是隻撒嬌鬼。就算是初次見面的人，也會過去蹭來蹭去，因此很受客人的好評</p>
+                    <dl>
+                        <dt>特徵：</dt>
+                        <dd>沙啞嗓音。呼嚕呼嚕磨蹭蹭攻擊。</dd>
+                        <dt>個性：</dt>
+                        <dd>愛撒嬌。奸詐。</dd>
+                    </dl>
+                    <p>更多介紹→</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </section>
 
-                <p>更多介紹→</p>
-            </section><!-- /#subaru -->
-
-            <section id="gureko" class="col-md">
-                <h3>●暮子（灰貓・母）</h3>
-                <p>剛出生時，有類似美國短毛貓那樣的花紋，沒想到長大後變成單純只是隻灰貓。可能有混到一點長毛種，毛非常膨鬆，因此被我家人戲稱是「灰毛球」。
-                    從她偏沙啞的聲音和成熟的臉孔，很難想像她其實是隻撒嬌鬼。就算是初次見面的人，也會過去蹭來蹭去，因此很受客人的好評。</p>
-
-                ［照片］
-                <dl>
-                    <dt>特徵：</dt>
-                    <dd>沙啞嗓音。呼嚕呼嚕磨蹭蹭攻擊。</dd>
-                    <dt>個性：</dt>
-                    <dd>愛撒嬌。奸詐。</dd>
-                </dl>
-
-                <p>更多介紹→</p>
-            </section><!-- /#gureko -->
-
-            <section id="nezuko" class="col-md">
-                <h3>●鼠子（白底橘虎斑・母）</h3>
-                <p>和暮子一起來到我家的白底橘虎斑女孩。性格與暮子不同，是典型的貓性格。若說她是傲嬌，不如說她是高傲更貼切（淚）。在與暮子的勢力爭戰中敗北，被從家裡趕出去，現在是半流浪狀態。
-                    原本外型算是純日本貓風的美人，但在流浪時被烏鴉攻擊，因而失去一隻眼睛。孤高的貓咪。</p>
-
-                ［照片］
-                <dl>
-                    <dt>特徴：</dt>
-                    <dd>獨眼、小臉。</dd>
-                    <dt>個性：</dt>
-                    <dd>高傲，在人類面前就是個女王。飼主介紹</dd>
-                </dl>
-
-                <p>更多介紹→</p>
-            </section><!-- /#nezuko -->
-        </section><!-- /#cats -->
+            <section class="card col-md" id="subaru">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="card-title">●鼠子（白底橘虎斑・母）</h3>
+                    <p class="card-text">
+                        和暮子一起來到我家的白底橘虎斑女孩。性格與暮子不同，是典型的貓性格。若說她是傲嬌，不如說她是高傲更貼切（淚）。在與暮子的勢力爭戰中敗北，被從家裡趕出去，現在是半流浪狀態。
+                        原本外型算是純日本貓風的美人，但在流浪時被烏鴉攻擊，因而失去一隻眼睛。孤高的貓咪。</p>
+                    <dl>
+                        <dt>特徴：</dt>
+                        <dd>獨眼、小臉。</dd>
+                        <dt>個性：</dt>
+                        <dd>高傲，在人類面前就是個女王。飼主介紹</dd>
+                    </dl>
+                    <p>更多介紹→</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </section>
+        </section>
 
         <section id="profile">
             <h2>飼主介紹</h2>
