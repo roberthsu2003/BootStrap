@@ -1,7 +1,7 @@
 # bootstrap_gridSystem
 ## 12欄系統
 - .container回應預設寬度
-- .container-fluid回應寬度為width:100%-(gridSystem.html)
+- .container-fluid回應寬度為width:100% [gridSystem.html](gridSystem.html)
 - 自動調整欄位數
 	- 相同寬度(AutoLayout_Equal_Width.html)
 	- 一個Row內使用多行(equal_window_multi_line.html)
