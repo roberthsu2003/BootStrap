@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*base*/
+*{
+		margin:0;
+		padding:0;
+}
+
+#wrap{
+		width:500px;
+		padding:10px;
+		margin:30px auto;
+		border:#000 2px solid;
+		background-color:#ccc;
+}
+
+p{
+	background-color:#fff;
+}
+
+.left{
+	width:400px;
+	margin-bottom:10px;
+	float:left;
+}
+
+.right{
+	width:100px;
+	height:100px;
+	background-color:#f00;
+	float:right;
+	position:relative;
+	right:-30px;
+	top:0;
+}
+
+.clear{
+	clear:both;
+}

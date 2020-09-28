@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*base*/
+*{
+		margin:0;
+		padding:0;
+}
+
+#wrap{
+		width:500px;
+		padding:10px;
+		margin:30px auto;
+		border:#000 2px solid;
+		background-color:#ccc;
+		position:relative;
+}
+
+p{
+	margin-bottom:10px;
+	background-color:#fff;
+}
+
+/*絕對配置內容*/
+#pos{
+	width:15px;
+	padding:10px;
+	background:#f00;
+	position:absolute;
+	right:-30px;
+	top:0;
+	z-index:-1;
+}

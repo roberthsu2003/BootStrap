@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8">
+<title>範例：CSS3屬性</title>
+<link href="css/base.css" rel="stylesheet" media="all">
+<link href="css/style.css" rel="stylesheet" media="all">
+</head>
+<body>
+<h1>CSS3 Properties</h1>
+
+<section  class="category">
+<h2>Text＆Color/Unit【文字美化與新色、新單位】</h2>
+
+<section>
+<h3>text-shadow</h3>
+<table border="1" class="ie">
+<tr>
+<th>IE10+</th><td>○</td>
+<th>IE9</th><td>×</td>
+<th>IE8</th><td>×</td>
+</tr>
+</table>
+<ul class="sample ts">
+<li class="ts01">Drop Shadow</li>
+<li class="ts02">Grow</li>
+<li class="ts03">Bevel</li>
+<li class="ts04">Embos</li>
+<li class="ts05">Stroke</li>
+<li class="ts06">Neon</li>
+</ul>
+</section>
+
+<section class="color">
+<h3>rgba()</h3>
+<table border="1" class="ie">
+<tr>
+<th>IE10+</th><td>○</td>
+<th>IE9</th><td>○</td>
+<th>IE8</th><td>×</td>
+</tr>
+</table>
+<p class="rgba"><span>RGBA COLOR</span></p>
+
+<h3>hsla()</h3>
+<ul class="hsla">
+<li class="hsla01">紅</li>
+<li class="hsla02">橙</li>
+<li class="hsla03">黃</li>
+<li class="hsla04">緣</li>
+<li class="hsla05">藍</li>
+<li class="hsla06">紫</li>
+<li class="hsla07">桃</li>
+</ul>
+</section>
+
+<section>
+<h3>rem</h3>
+<table border="1" class="ie">
+<tr>
+<th>IE10+</th><td>○</td>
+<th>IE9</th><td>○</td>
+<th>IE8</th><td>×</td>
+</tr>
+</table>
+<ul class="em">
+<li>以em設定的項目</li>
+<li>以em設定的項目
+	<ul>
+		<li>以em設定的巢狀項目</li>
+	</ul>
+</li>
+</ul>
+<hr>
+<ul class="rem">
+<li>以rem設定的項目</li>
+<li>以rem設定的項目
+	<ul>
+		<li>以rem設定的巢狀項目</li>
+	</ul>
+</li>
+</ul>
+</section>
+</section>
+
+<section class="category">
+<h2>Box＆Box Model【盒子模型與樣式美化】</h2>
+
+<section>
+<h3>border-radius</h3>
+<table border="1" class="ie">
+<tr>
+<th>IE10+</th><td>○</td>
+<th>IE9</th><td>○</td>
+<th>IE8</th><td>×</td>
+</tr>
+</table>
+<ul class="sample bdr">
+<li class="bdr01">全部相同</li>
+<li class="bdr02">左上｜右上｜右下｜左下</li>
+<li class="bdr03">左上｜右上與左下｜右下</li>
+<li class="bdr04">左上與右下｜ 右上與左下</li>
+<li class="bdr05">正圓</li>
+</ul>
+</section>
+
+<section>
+<h3>box-shadow</h3>
+<table border="1" class="ie">
+<tr>
+<th>IE10+</th><td>○</td>
+<th>IE9</th><td>○</td>
+<th>IE8</th><td>×</td>
+</tr>
+</table>
+<ul class="sample bs">
+<li class="bs01">Drop Shadow</li>
+<li class="bs02">Grow</li>
+<li class="bs03">Inset Drop Shadow</li>
+<li class="bs04">Inset Grow</li>
+<li class="bs05">Spread Shadow</li>
+<li class="bs06">Multi Shadow</li>
+</ul>
+</section>
+
+<section>
+<h3>box-sizing</h3>
+<table border="1" class="ie">
+<tr>
+<th>IE10+</th><td>○</td>
+<th>IE9</th><td>○</td>
+<th>IE8</th><td>○</td>
+</tr>
+</table>
+<ul class="sample bz">
+<li class="bz01">content-box（width:300px;）</li>
+<li class="bz02">border-box（width:300px;）</li>
+</ul>
+</section>
+</section>
+
+<section  class="category">
+<h2>Background＆Gradiant【背景圖與漸層效果】</h2>
+
+<section>
+<h3>multiple-background</h3>
+<table border="1" class="ie">
+<tr>
+<th>IE10+</th><td>○</td>
+<th>IE9</th><td>○</td>
+<th>IE8</th><td>×</td>
+</tr>
+</table>
+<div class="multi-bg">&nbsp;</div>
+</section>
+
+<section>
+<h3>background-size</h3>
+<table border="1" class="ie">
+<tr>
+<th>IE10+</th><td>○</td>
+<th>IE9</th><td>○</td>
+<th>IE8</th><td>×</td>
+</tr>
+</table>
+<ul class="bgsize">
+<li class="bgsize01">auto</li>
+<li class="bgsize02">cover</li>
+<li class="bgsize03">contain</li>
+<li class="bgsize04">%</li>
+<li class="bgsize05">px</li>
+</ul>
+</section>
+
+<section>
+<h3>linear-gradient()</h3>
+<table border="1" class="ie">
+<tr>
+<th>IE10+</th><td>○</td>
+<th>IE9</th><td>×</td>
+<th>IE8</th><td>×</td>
+</tr>
+</table>
+<ul class="grad">
+<li class="grad01">2Colors（top → bottom）</li>
+<li class="grad02">3Colors（left → right）</li>
+<li class="grad03">3Colors（left top → right bottom）</li>
+</ul>
+</section>
+
+<section>
+<h3 class="practice">用CSS3製作有光澤的按鈕</h3>
+<p class="button"><a href="#">button</a></p>
+</section>
+</section>
+
+</body>
+</html>

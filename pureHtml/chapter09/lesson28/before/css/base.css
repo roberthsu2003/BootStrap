@@ -1,0 +1,161 @@
+﻿@charset "utf-8";
+/*
+=======================================
+	Reset CSS
+=======================================
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, main, menu, nav, section, summary,
+time, mark, audio, video{
+	margin:0;
+	padding:0;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,main,menu,nav,section{
+	display:block;
+}
+
+html{
+	-webkit-text-size-adjust: 100%;
+}
+
+body{
+	font-family: sans-serif;
+}
+
+img{
+	border: 0;
+}
+
+ul,ol{
+	list-style-type: none;
+}
+
+table {
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+
+img, input, select, textarea { 
+	vertical-align: middle;
+}
+
+
+/*
+=========================================
+	Base Layout
+=========================================
+*/
+/*ALL and Smart Phone*/
+
+
+/*
+=========================================
+	Modules（Block）
+=========================================
+*/
+
+/*header
+--------------------*/
+
+
+/*global navigation
+--------------------*/
+
+
+/*main
+--------------------*/
+
+
+/*Google Map
+--------------------*/
+
+
+/*introduction
+--------------------*/
+
+
+/*Pickup Menu
+--------------------*/
+
+
+/*info
+--------------------*/
+
+
+/*staff
+--------------------*/
+
+
+/*banner
+--------------------*/
+
+
+/*footer
+--------------------*/
+
+
+/*
+=========================================
+	Modules（Parts）
+=========================================
+*/
+
+/*Heading
+--------------------*/
+
+
+/*
+=========================================
+	Utilities
+=========================================
+*/
+
+/* 邊界
+---------------------------------*/
+.mb0{ margin-bottom: 0 !important;}
+.mb5{ margin-bottom: 5px !important;}
+.mb10{ margin-bottom: 10px !important;}
+.mb15{ margin-bottom: 15px !important;}
+.mb20{ margin-bottom: 20px !important;}
+.mb25{ margin-bottom: 25px !important;}
+.mb30{ margin-bottom: 30px !important;}
+.mb35{ margin-bottom: 35px !important;}
+.mb40{ margin-bottom: 40px !important;}
+.mb45{ margin-bottom: 45px !important;}
+.mb50{ margin-bottom: 50px !important;}
+
+/* 水平對齊
+---------------------------------*/
+.ta-l{ text-align: left; }
+.ta-r{ text-align: right; }
+.ta-c{ text-align: center; }
+
+
+/* 浮動／清除浮動
+---------------------------------*/
+.fl{ float:left; }
+.fr{ float:right; }
+.fl-img{ float: left; margin-right: 10px; margin-bottom: 10px;}
+.fr-img{ float: right; margin-left: 10px; margin-bottom: 10px;}
+.clear{ clear:both; }
+
+/* clearfix */
+.clearfix:after {
+	content: ""; 
+	display: block; 
+	clear: both; 
+}
+.clearfix{
+	zoom:1;
+}

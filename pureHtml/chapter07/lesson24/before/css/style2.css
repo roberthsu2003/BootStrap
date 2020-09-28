@@ -1,0 +1,119 @@
+/* Transform（變形）
+---------------------------*/
+
+/*translate()*/
+
+
+/*scale()*/
+
+
+/*rotate()*/
+
+
+/*skew()*/
+
+
+
+/* Transform-Origin
+---------------------------*/
+.origin li{
+	width:30%;
+	cursor:pointer;
+}
+
+.origin li:hover{	
+	-webkit-transform: scale(2, 1);
+	-moz-transform: scale(2, 1);
+	-o-transform: scale(2, 1);
+	-ms-transform: scale(2, 1);
+	transform: scale(2, 1);
+
+}
+
+
+/* Transition
+---------------------------*/
+/*變色按鈕1（同時）*/
+p.btn01 a{
+	background-color:#9c9;
+	color:#fff;
+}
+
+p.btn01 a:hover{
+	background-color:#fc6;
+	color:#000;
+}
+
+/*變色按鈕2（只變底色）*/
+p.btn02 a{
+	background-color:#9c9;
+	color:#fff;
+}
+
+p.btn02 a:hover{
+	background-color:#fc6;
+	color:#000;
+}
+
+/*變色按鈕3（時間差）*/
+p.btn03 a{
+	background-color:#9c9;
+	color:#fff;
+}
+
+p.btn03 a:hover{
+	background-color:#fc6;
+	color:#000;
+}
+
+/*transition-timing-function*/
+
+.timing li{
+	position:relative;
+	left:0;
+}
+
+.timing:hover li{
+	left:500px;
+}
+
+.t01{
+	-webkit-transition:left 1s ease;
+	-moz-transition:left 1s ease;
+	-o-transition:left 1s ease;
+	-ms-transition:left 1s ease;
+	transition:left 1s ease;
+}
+
+.t02{
+	-webkit-transition:left 1s linear;
+	-moz-transition:left 1s linear;
+	-o-transition:left 1s linear;
+	-ms-transition:left 1s linear;
+	transition:left 1s linear;
+}
+
+.t03{
+	-webkit-transition:left 1s ease-in;
+	-moz-transition:left 1s ease-in;
+	-o-transition:left 1s ease-in;
+	-ms-transition:left 1s ease-in;
+	transition:left 1s ease-in;
+}
+
+.t04{
+	-webkit-transition:left 1s ease-out;
+	-moz-transition:left 1s ease-out;
+	-o-transition:left 1s ease-out;
+	-ms-transition:left 1s ease-out;
+	transition:left 1s ease-out;
+}
+
+.t05{
+	-webkit-transition:left 1s ease-in-out;
+	-moz-transition:left 1s ease-in-out;
+	-o-transition:left 1s ease-in-out;
+	-ms-transition:left 1s ease-in-out;
+	transition:left 1s ease-in-out;
+}
+

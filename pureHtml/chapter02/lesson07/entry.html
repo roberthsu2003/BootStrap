@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>我家的貓咪</title>
+<meta name="keywords" content="貓咪,喵咪,喵星人,貓咪介紹">
+<meta name="description" content="介紹我家的偶像貓咪們！還有大量可愛的貓照片。">
+</head>
+
+<body>
+<div id="wrap">
+<h1>投稿貓咪照片</h1>
+<p>請填寫下列欄位後，按下投稿按鈕。</p>
+
+<form id="entryForm" action="#" method="post">
+<table border="1">
+<tr>
+<th>貓咪名：</th>
+<td><input type="text" name="cat-name"></td>
+</tr>
+<tr>
+<th>居住地區：</th>
+<td>
+<select name="pref">
+<option value="" selected>請選擇</option>
+<option value="北海道">北海道</option>
+<option value="東北">東北</option>
+<option value="關東甲信越">關東甲信越</option>
+<option value="東海、北陸">東海、北陸</option>
+<option value="近畿">近畿</option>
+<option value="中國地方、四國">中國地方、四國</option>
+<option value="九州、沖繩">九州、沖繩</option>
+</select>
+</td>
+</tr>
+<tr>
+<th>性別：</th>
+<td>
+<input type="radio" name="sex" value="男生" checked>男生
+<input type="radio" name="sex" value="女生">女生
+</td>
+</tr>
+<tr>
+<th>喜歡的食物：</th>
+<td>
+<input type="checkbox" name="like1" value="魚">魚
+<input type="checkbox" name="like2" value="肉">肉
+<input type="checkbox" name="like3" value="牛奶">牛奶
+<input type="checkbox" name="like4" value="乾飼料">乾飼料
+<input type="checkbox" name="like5" value="貓罐頭">貓罐頭
+<input type="checkbox" name="like6" value="甜食">甜食
+</td>
+</tr>
+<tr>
+<th>照片：</th>
+<td><input type="file" name="photo"></td>
+</tr>
+<tr>
+<th>飼主名：</th>
+<td><input type="text" name="name"></td>
+</tr>
+<tr>
+<th>E-Mail：</th>
+<td><input type="email" name="email"></td>
+</tr>
+<tr>
+<th>備註：</th>
+<td><textarea name="comment" row="4" cols="40"></textarea></td>
+</tr>
+</table>
+<div>
+<input type="reset" value="清除重填">
+<input type="submit" value="投稿">
+</div>
+</form>
+
+<p><small>Copyright &copy; UCHI NO NYAN'S All Rights Reserved.</small></p>
+</div>
+</body>
+</html>

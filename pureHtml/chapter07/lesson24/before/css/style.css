@@ -1,0 +1,83 @@
+/* 文字美化與新色、新單位
+---------------------------*/
+
+/*text-shadow*/
+
+
+/*rgba()*/
+.rgba span{
+	border:#fff 1px solid;
+	padding:10px;
+	background:#fff;
+}
+
+
+/*hsla()*/
+.hsla01{background:hsla(0,100%,50%,1);}
+.hsla02{background:hsla(30,100%,50%,1);}
+.hsla03{background:hsla(60,100%,50%,1);}
+.hsla04{background:hsla(120,100%,50%,1);}
+.hsla05{background:hsla(240,100%,50%,1);}
+.hsla06{background:hsla(270,100%,50%,1);}
+.hsla07{background:hsla(300,100%,50%,1);}
+
+
+/*rem*/
+.em li{
+	font-size:1.2em;
+}
+
+
+
+/* 盒子模型與樣式美化
+---------------------------*/
+/*border-radius*/
+
+
+/*box-shadow*/
+
+/*box-sizing*/
+.bz li{ 
+	width:300px;
+	padding:10px;
+	border:5px solid #000;
+}
+
+
+
+/* 背景圖與漸層效果
+---------------------------*/
+/*multiple-background*/
+
+
+/*background-size*/
+
+
+/*linear-gradient()*/
+
+
+/*練習*/
+.button{
+	width:50%;
+	margin:10px auto;
+	text-align:center;
+}
+
+.button a{
+	display:block;
+	padding:10px;
+	border-radius:5px;
+	box-shadow:1px 1px 3px #666;
+	color:#fff;
+	text-decoration:none;
+	text-shadow:1px 1px 0 rgba(0,0,0,0.4);
+	font-family:Helvetica, Arial, san-serif;
+	font-weight:bold;
+	font-size:150%;
+	background-color:#f36;
+	/*以下設定漸層效果*/
+}
+
+.button a:hover{
+	text-shadow:0 0 5px #fff;
+}

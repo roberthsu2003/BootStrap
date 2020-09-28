@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*base*/
+*{
+		margin:0;
+		padding:0;
+}
+
+#wrap{
+		width:500px;
+		padding:10px;
+		margin:30px auto;
+		border:#000 2px solid;
+		background-color:#ccc;
+}
+
+p{
+	margin-bottom:10px;
+	background-color:#fff;
+}
+
+/*固定配置選單*/
+#fixed{
+	width:100%;
+	padding:10px 0;
+	background-color:#f00;
+	position:fixed;
+	left:0;
+	bottom:0;
+}
+
+/*回頁面開頭*/
+#pagetop{
+	margin:0;
+	margin-left: 262px;
+	position:fixed;
+	left: 50%;
+	bottom: 42px;
+}
+
+#pagetop a{
+	display:inline-block;
+	padding:10px;
+	background: #000;
+	color: #fff;
+	text-decoration: none;
+}
