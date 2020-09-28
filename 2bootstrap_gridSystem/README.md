@@ -11,7 +11,7 @@
 ### 回應所有的中斷點 
 - .col
 - .col-*
-- all_breakpoints.html
+- [all_breakpoints](all_breakpoints.html)
 ### 開始水平堆疊
 - col-sm-*
 - stackedToHorizontal.html
