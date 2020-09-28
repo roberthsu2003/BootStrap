@@ -38,5 +38,5 @@
 - align-items-start
 - align-items-center
 - align-items-end
-- vertialAlignment.html
+- [vertialAlignment](vertialAlignment.html)
 ### 水平對齊
