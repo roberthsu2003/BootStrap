@@ -14,7 +14,7 @@
 - [all_breakpoints](all_breakpoints.html)
 ### 開始水平堆疊
 - col-sm-*
-- stackedToHorizontal.html
+- [[stackedToHorizontal](stackedToHorizontal.html)]
 
 ### 混合不同中斷點
 - col-md-*
