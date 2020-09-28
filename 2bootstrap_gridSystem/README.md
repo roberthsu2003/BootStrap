@@ -40,3 +40,9 @@
 - align-items-end
 - [vertialAlignment](verticalAlignment.html)
 ### 水平對齊
+- justify-content-start
+- justify-content-center
+- justify-content-end
+- justify-content-around
+- justify-content-end
+- [HorizontalAlignment](HorizontalAlignment.html)
