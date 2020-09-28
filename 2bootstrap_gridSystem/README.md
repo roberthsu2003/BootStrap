@@ -6,7 +6,7 @@
 	- 相同寬度[[AutoLayout_Equal_Width](AutoLayout_Equal_Width.html)]
 	- 一個Row內使用多行[[equal_window_multi_line](equal_window_multi_line.html)]
 	- 在一列內設定一欄為自訂寬度[[setting_one_column_width](setting_one_column_width.html)]
-	- 依內容改變寬度的欄位(variable_width_content.html)
+	- 依內容改變寬度的欄位[[variable_width_content](variable_width_content.html)]
 ## 5個回應階層的設定方法
 ### 回應所有的中斷點 
 - .col
