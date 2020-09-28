@@ -3,7 +3,7 @@
 - .container回應預設寬度
 - .container-fluid回應寬度為width:100% [[gridSystem.html](gridSystem.html)]
 - 自動調整欄位數
-	- 相同寬度(AutoLayout_Equal_Width.html)
+	- 相同寬度[[AutoLayout_Equal_Width](AutoLayout_Equal_Width.html)]
 	- 一個Row內使用多行(equal_window_multi_line.html)
 	- 在一列內設定一欄為自訂寬度(setting_one_column_width.html)
 	- 依內容改變寬度的欄位(variable_width_content.html)
