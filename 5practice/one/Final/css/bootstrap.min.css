@@ -1,0 +1,141 @@
+/********** 清除與定義網頁基底樣式 **********/
+a, a:link, a:visited, a:hover, a:active{
+    /* 滑鼠樣式改為手指 */
+    cursor: pointer;
+    /* 清除超連結的底線 */
+    text-decoration: none;
+}
+
+ul, li{
+   /* 全部外距 */
+   margin: 0;
+   /* 全部內距 */
+   padding: 0;
+   /* 清除項目符號樣式 */
+   list-style: none;
+}
+
+/********** 背景 **********/
+body{
+    /* 背景顏色 */
+    background-color: rgb(245, 245, 245);
+}
+
+/********** card內距值 **********/
+.card{
+    /* 向下外距 */
+    margin-bottom: 1.6rem;
+    /* 全部內距 */
+    padding: 1rem;
+}
+
+/********** icon樣式定義 **********/
+/* FontAwesome-基本樣式 */
+.icon{
+    /* FontAwesome字型 */
+    font-family: "Font Awesome 5 Free";
+    /* 文字尺寸 */
+    font-size: .8rem;
+    /* 文字寬度 */
+    font-weight: 400;
+}
+
+/* FontAwesome-日期 */
+.datetime:before{
+    /* icon圖示代碼 */
+    content: '\f073';
+    /* 向右內距 */
+    padding-right: .4rem;
+}
+
+/* FontAwesome-上一篇 */
+.page-previous:before{
+    /* icon圖示代碼 */
+    content: '\f104';
+    /* 字型粗細 */
+    font-weight: 900;
+}
+/* FontAwesome-下一篇 */
+.page-next:after{
+    /* icon圖示代碼 */
+    content: '\f105';
+    /* 字型粗細 */
+    font-weight: 900;
+}
+
+/********** 側邊欄：最新文章與分類 **********/
+li.media img{
+    /* 寬度 */
+    width: 60px;
+    /* 高度 */
+    height: 60px;
+}
+
+h5 > a, .category > li > a{
+    /* 文字顏色 */
+    color: #000;
+    /* 定義 color 屬性的過渡時間 */
+    transition: color .4s;
+}
+
+h5 > a:hover, .category > li > a:hover{
+    /* 文字顏色 */
+    color: #8f8f8f;
+}
+
+/********** 側邊欄：分類 **********/
+.category > li{
+    /* 區塊 */
+    display: block;
+    /* 上下與左右內距 */
+    padding: 8px 0px;
+    /* 下方邊線 */
+    border-bottom: 1px solid #8f8f8f;
+}
+.category > li:nth-last-child(1){
+    /* 下方邊線歸零 */
+    border-bottom: 0px solid #8f8f8f;
+}
+
+/********** 側邊欄：標籤雲 **********/
+li.tag{
+    /* 上下與左右外距 */
+    margin: 10px 2px;
+}
+
+li.tag > a{
+    /* 上下與左右內距 */
+    padding: 8px 15px;
+    /* 文字顏色 */
+    color: #000;
+    /* 背景顏色 */
+    background-color: #e7e7e7;
+    /* 定義全部屬性的過渡時間 */
+    transition: all .4s;
+}
+
+li.tag > a:hover{
+    /* 文字顏色 */
+    color: #FFF;
+    /* 背景顏色 */
+    background-color: #8f8f8f;
+}
+
+/********** 側邊欄：社群分享 **********/
+li.share{
+    /* 上下與左右外距 */
+    margin: 10px 5px;
+}
+
+li.share .fab{
+    /* 文字尺寸 */
+    font-size: 40px;
+    /* 文字顏色 */
+    color: #e7e7e7;
+    /* 定義 color 屬性的過渡時間 */
+    transition: color .4s;
+}
+li.share .fab:hover{
+    /* 文字顏色 */
+    color: #8f8f8f;
+}
