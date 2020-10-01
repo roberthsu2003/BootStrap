@@ -1,223 +1,141 @@
-/* 載入Google字型 */
-@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
-
-/********** 基礎樣式 **********/
-html{
-    /* 外距值歸零 */
-    margin: 0;
-    /* 內距值歸零 */
-    padding: 0;
-}
-
-body{
-    /* 字型 */
-    font-family: 'Noto Sans TC', sans-serif;
-    /* 顏色 */
-    color: #2b2b2b;
-}
-
-a, a:active, a:hover, a:link, a:visited {
-    /* 取消連結底線 */
-    text-decoration: none;
-    /* 取消按下時的藍色外框 */
-    outline: none;
-    /* 顏色 */
-    color: #2b2b2b;
-}
-a:hover{
-    /* 顏色 */
-    color: #999;
-}
-
-h2, .title-color{
-    /* 顏色 */
-    color: #0099d1;
-}
-
-/********** logo **********/
-@media screen and (max-width: 768px){
-    .navbar-brand img{
-        /* 寬度 */
-        width: 60px;
-    }
-}
-
-/********** 產品服務card效果 **********/
-.product-categories > a{
-    /* 變形-縮放-維持目前尺寸 */
-    transform: scale(1);
-    /* 過渡效果 */
-    transition: transform .4s ease-out;
-}
-.product-categories > a:hover{
-    /* 變形-縮放-放大1.02倍 */
-    transform: scale(1.02);
-    /* 陰影 */
-    box-shadow: 4px 4px 10px #999;
-}
-/********** google map **********/
-.map{
-    /* 寬度 */
-    width: 100%;
-    /* 高度 */
-    height: 300px;
-}
-/********** footer-menu **********/
-.footer-menu{
-    /* 區塊元素 */
-    display: block;
-    /* 清除符號樣式 */
-    list-style: none;
-    /* 內距值歸零 */
-    padding: 0;
-    /* 外距值歸零 */
-    margin: 0;
-}
-.footer-menu > li{
-    /* 行內元素 */
-    display: inline-block;
-    /* 向右外距 */
-    margin-right: 1rem;
-}
-.footer-menu > li > a{
-    /* 顏色 */
-    color: #fff;
-    /* 上下內距值為1rem，左右外距值為0 */
-    padding: 1rem 0;
-}
-.footer-menu > li > a:hover{
-    /* 顏色 */
-    color: #999;
-}
-@media screen and (max-width: 768px){
-    .send-btn{
-        /* 寬度 */
-        width: 100%;
-    }
-}
-
-/********** 頁面高度 **********/
-.page-content{
-    /* 最小高度 */
-    min-height: 700px;
-}
-
-/********** 人力資源-清除垂直對齊位置 **********/
-.table-middle .table td, .table-middle .table th{
-    /* 垂直對齊位置改為置中 */
-    vertical-align: middle;
-}
-
-/********** 購物車清單 **********/
-.sidebar-product-list{
-    /* 上方內距 */
-    padding-top: 1rem;
-    /* 下方邊框樣式 */
-    border-bottom: 1px solid #e9e9e9;
-}
-.product-list-img{
-    /* 寬度 */
-    width: 50px;
-    /* 高度 */
-    height: 50px;
-    /* 四個方向外距 */
-    margin: .2rem;
-    /* 透明度 100%*/
-    opacity: 1;
-    /* 四個方向邊框樣式 */
-    border: 1px solid #0099d1;
-}
-.sidebar-product-list:hover .product-list-img{
-    /* 透明度 50% */
-    opacity: .5;
-}
-/********** 購物清單移除商品按鈕 **********/
-.remove{
-    display: inline-block;
-    /* 寬度 */
-    width: 20px;
-    /* 高度 */
-    height: 20px;
-    /* 文字置中對齊 */
-    text-align: center;
-    /* 行高 */
-    line-height: 20px;
-    /* 背景顏色 */
-    background-color: #FF0000;
-    /* 圓角 */
-    border-radius: 50%;
-    /* 滑鼠遊標改為手指 */
+/********** 清除與定義網頁基底樣式 **********/
+a, a:link, a:visited, a:hover, a:active{
+    /* 滑鼠樣式改為手指 */
     cursor: pointer;
+    /* 清除超連結的底線 */
+    text-decoration: none;
 }
-.remove:hover{
+
+ul, li{
+   /* 全部外距 */
+   margin: 0;
+   /* 全部內距 */
+   padding: 0;
+   /* 清除項目符號樣式 */
+   list-style: none;
+}
+
+/********** 背景 **********/
+body{
     /* 背景顏色 */
-    background-color: rgb(172, 2, 2);
+    background-color: rgb(245, 245, 245);
 }
 
-/********** 商品分類 **********/
-.sidebar-product-category{
+/********** card內距值 **********/
+.card{
+    /* 向下外距 */
+    margin-bottom: 1.6rem;
+    /* 全部內距 */
+    padding: 1rem;
+}
+
+/********** icon樣式定義 **********/
+/* FontAwesome-基本樣式 */
+.icon{
+    /* FontAwesome字型 */
+    font-family: "Font Awesome 5 Free";
+    /* 文字尺寸 */
+    font-size: .8rem;
+    /* 文字寬度 */
+    font-weight: 400;
+}
+
+/* FontAwesome-日期 */
+.datetime:before{
+    /* icon圖示代碼 */
+    content: '\f073';
+    /* 向右內距 */
+    padding-right: .4rem;
+}
+
+/* FontAwesome-上一篇 */
+.page-previous:before{
+    /* icon圖示代碼 */
+    content: '\f104';
+    /* 字型粗細 */
+    font-weight: 900;
+}
+/* FontAwesome-下一篇 */
+.page-next:after{
+    /* icon圖示代碼 */
+    content: '\f105';
+    /* 字型粗細 */
+    font-weight: 900;
+}
+
+/********** 側邊欄：最新文章與分類 **********/
+li.media img{
+    /* 寬度 */
+    width: 60px;
+    /* 高度 */
+    height: 60px;
+}
+
+h5 > a, .category > li > a{
+    /* 文字顏色 */
+    color: #000;
+    /* 定義 color 屬性的過渡時間 */
+    transition: color .4s;
+}
+
+h5 > a:hover, .category > li > a:hover{
+    /* 文字顏色 */
+    color: #8f8f8f;
+}
+
+/********** 側邊欄：分類 **********/
+.category > li{
+    /* 區塊 */
     display: block;
-    /* 外距歸零 */
-    margin: 0;
-    /* 內距歸零 */
-    padding: 0;
-    /* 清除清單符號 */
-    list-style: none;
+    /* 上下與左右內距 */
+    padding: 8px 0px;
+    /* 下方邊線 */
+    border-bottom: 1px solid #8f8f8f;
 }
-.sidebar-product-category > li{
-    display: block;
-    /* 上下內距為0.5rem, 左右為0 */
-    padding: .5rem 0;
-    /* 向下邊框樣式 */
-    border-bottom: 1px solid #e9e9e9;
-}
-.sidebar-product-category > li > a{
-    /* 顏色 */
-    color: rgb(43, 43, 43);
-}
-.sidebar-product-category > li > a:hover{
-    /* 顏色 */
-    color: #999;
+.category > li:nth-last-child(1){
+    /* 下方邊線歸零 */
+    border-bottom: 0px solid #8f8f8f;
 }
 
-
-/********** 購物車 **********/
-.product-remove{
-    /* 寬度 */
-    width: 5%;
-}
-.product-thumbnail{
-    /* 寬度 */
-    width: 15%;
-}
-.product-name{
-    /* 寬度 */
-    width: 35%;
-}
-.product-price, .product-quantity, .product-subtotal{
-    /* 寬度 */
-    width: 15%;
-}
-.product-quantity input{
-    /* 寬度 */
-    width: 50%;
+/********** 側邊欄：標籤雲 **********/
+li.tag{
+    /* 上下與左右外距 */
+    margin: 10px 2px;
 }
 
-@media screen and (max-width: 768px){
-    .product-thumbnail{
-        /* 將區塊隱藏 */
-        display: none;
-    }
-    .product-quantity input{
-        /* 寬度 */
-        width: 100%;
-    }
+li.tag > a{
+    /* 上下與左右內距 */
+    padding: 8px 15px;
+    /* 文字顏色 */
+    color: #000;
+    /* 背景顏色 */
+    background-color: #e7e7e7;
+    /* 定義全部屬性的過渡時間 */
+    transition: all .4s;
 }
 
-/********** 註冊與登入 **********/
-@media screen and (max-width: 768px){
-    .login-btn{
-        /* 寬度 */
-        width: 100%;
-    }
+li.tag > a:hover{
+    /* 文字顏色 */
+    color: #FFF;
+    /* 背景顏色 */
+    background-color: #8f8f8f;
+}
+
+/********** 側邊欄：社群分享 **********/
+li.share{
+    /* 上下與左右外距 */
+    margin: 10px 5px;
+}
+
+li.share .fab{
+    /* 文字尺寸 */
+    font-size: 40px;
+    /* 文字顏色 */
+    color: #e7e7e7;
+    /* 定義 color 屬性的過渡時間 */
+    transition: color .4s;
+}
+li.share .fab:hover{
+    /* 文字顏色 */
+    color: #8f8f8f;
 }

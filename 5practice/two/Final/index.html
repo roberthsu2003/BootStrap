@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>岡南塑膠發泡有限公司</title>
-    <link rel="shortcut icon" type="image/png" href="./images/logo.png"/>
+    <title>旅遊日記</title>
     <!-- CSS文件載入 -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
@@ -15,282 +14,236 @@
     <script src="./js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <!-- header/start -->
-    <header class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <a class="navbar-brand" href="index.html">
-                <img src="./images/logo.png" alt="logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">首頁</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">關於岡南</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="shop.html">產品商城</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="job.html">人力資源</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">連絡我們</a>
-                    </li>
-                </ul>
-                <div class="ml-auto">
-                    <a href="login.html" class="btn btn-outline-success text-success my-2 my-sm-0">登入</a>
-                    <a href="cart.html" class="btn btn-outline-success text-success my-2 my-sm-0">購物車</a>
-                    <a href="checkout.html" class="btn btn-outline-success text-success my-2 my-sm-0">結帳</a>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <!-- header/end -->
-    <!-- 廣告/start -->
-    <section class="container-fluid">
-        <div class="row">
-            <div id="carouselBanner" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselBanner" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselBanner" data-slide-to="1"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="./images/slider_1.jpg" alt="First slide">
-                        <div class="carousel-caption d-none d-md-block text-dark">
-                            <h3>EVA發泡板</h3>
-                            <p>依國際標準Pantone標準色卡之色號來製作</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="./images/slider_2.jpg" alt="Second slide">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3>廠房設備</h3>
-                            <p>高專業的製造能力</p>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselBanner" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselBanner" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
+    <!-- 選單/start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+            <h1>旅遊日記</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarBlogMenu" aria-controls="navbarBlogMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarBlogMenu">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">首頁</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="index.html">連絡我們</a>
+                </li>
+            </ul>
         </div>
+    </nav>
+    <!-- 選單/end -->
+    <!-- 廣告/start -->
+    <section>
+        <img src="./images/banner.jpg" alt="旅遊日記" class="img-fluid">
     </section>
     <!-- 廣告/end -->
-    <!-- 產品分類/start -->
+    <!-- 麵包屑/start -->
+    <nav aria-label="breadcrumb" role="navigation">
+        <ol class="breadcrumb rounded-0 bg-dark d-flex justify-content-center">
+            <li class="breadcrumb-item">
+                <a href="#">首頁</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Blog</li>
+        </ol>
+    </nav>
+    <!-- 麵包屑/end -->
+    <!-- 部落格與側邊欄/start -->
     <section class="container mt-5">
         <div class="row">
-            <div class="col-12">
-                <h2>產品分類</h2>
-                <p>登山拐杖握把與人體工學專用握把，也生產EVA發泡握把/軟木握把、尼龍帶及相關配件，特殊設計及客製尺寸歡迎來信來電詢問。</p>
-            </div>
-            <div class="col-12">
-                <div class="card-deck mt-2 product-categories">
-                    <a href="shop.html" class="card">
-                        <img class="card-img-top" src="./images/services_1.jpg" alt="登山拐杖握把">
-                        <div class="card-body bg-dark">
-                            <h4 class="card-title text-white text-center">登山拐杖握把</h4>
+            <!-- 部落格內容/start -->
+            <div class="col-12 col-md-8">
+                <!-- 第一則文章/start -->
+                <div class="card">
+                    <img class="card-img-top" src="./images/img01.jpg" alt="blog image">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <strong>歡迎來臺灣</strong>
+                        </h4>
+                        <p class="card-text">「臺灣是亞洲的秘密寶石，任何時間來此造訪，都值回票價」，這是國際知名旅遊作家柯德（David Code）對臺灣的盛讚！</p>
+                        <p class="card-text">聯合國世界觀光組織UNWTO宣示2017年為「國際永續觀光發展年」！臺灣也正式啟動「2017生態旅遊年」，推出全國四季賞螢、賞鯨豚、賞候鳥、賞鷹、紫斑蝶等在地深度、生態旅遊體驗活動，更以主動營造螢火蟲棲地，成功爭取到「世界螢火蟲大會」在臺舉辦，這些無比豐富的生態旅遊精彩體驗，您絕對不能錯過！</p>
+                        <span class="d-block text-secondary mt-4 icon datetime">2017-12-31</span>
+                        <a href="blog-page.html" class="btn btn-outline-secondary mt-2 mb-1">繼續閱讀</a>
+                    </div>
+                </div>
+                <!-- 第一則文章/end -->
+                <!-- 第二則至第五則文章/start -->
+                <div class="row">
+                    <!-- 第二則文章/start -->
+                    <div class="col-12 col-sm-6">
+                        <div class="card">
+                            <img class="card-img-top" src="./images/img01.jpg" alt="blog image">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <strong>歡迎來臺灣</strong>
+                                </h4>
+                                <p class="card-text">「臺灣是亞洲的秘密寶石，任何時間來此造訪，都值回票價」，這是國際知名旅遊作家柯德（David Code）對臺灣的盛讚！</p>
+                                <p class="card-text">聯合國世界觀光組織UNWTO宣示2017年為「國際永續觀光發展年」！臺灣也正式啟動「2017生態旅遊年」，推出全國四季賞螢、賞鯨豚、賞候鳥、賞鷹、紫斑蝶等在地深度、生態旅遊體驗活動，更以主動營造螢火蟲棲地，成功爭取到「世界螢火蟲大會」在臺舉辦，這些無比豐富的生態旅遊精彩體驗，您絕對不能錯過！</p>
+                                <span class="d-block text-secondary mt-4 icon datetime">2017-12-31</span>
+                                <a href="blog-page.html" class="btn btn-outline-secondary mt-2 mb-1">繼續閱讀</a>
+                            </div>
                         </div>
-                    </a>
-                    <a href="shop.html" class="card">
-                        <img class="card-img-top" src="./images/services_2.jpg" alt="登山拐杖組合樣式">
-                        <div class="card-body bg-dark">
-                            <h4 class="card-title text-white text-center">登山拐杖組合樣式</h4>
+                    </div>
+                    <!-- 第二則文章/end -->
+                    <!-- 第三則文章/start -->
+                    <div class="col-12 col-sm-6">
+                        <div class="card">
+                            <img class="card-img-top" src="./images/img01.jpg" alt="blog image">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <strong>歡迎來臺灣</strong>
+                                </h4>
+                                <p class="card-text">「臺灣是亞洲的秘密寶石，任何時間來此造訪，都值回票價」，這是國際知名旅遊作家柯德（David Code）對臺灣的盛讚！</p>
+                                <p class="card-text">聯合國世界觀光組織UNWTO宣示2017年為「國際永續觀光發展年」！臺灣也正式啟動「2017生態旅遊年」，推出全國四季賞螢、賞鯨豚、賞候鳥、賞鷹、紫斑蝶等在地深度、生態旅遊體驗活動，更以主動營造螢火蟲棲地，成功爭取到「世界螢火蟲大會」在臺舉辦，這些無比豐富的生態旅遊精彩體驗，您絕對不能錯過！</p>
+                                <span class="d-block text-secondary mt-4 icon datetime">2017-12-31</span>
+                                <a href="blog-page.html" class="btn btn-outline-secondary mt-2 mb-1">繼續閱讀</a>
+                            </div>
                         </div>
-                    </a>
-                    <a href="shop.html" class="card">
-                        <img class="card-img-top" src="./images/services_3.jpg" alt="發泡套管">
-                        <div class="card-body bg-dark">
-                            <h4 class="card-title text-white text-center">發泡套管</h4>
+                    </div>
+                    <!-- 第三則文章/end -->
+                    <!-- 第四則文章/start -->
+                    <div class="col-12 col-sm-6">
+                        <div class="card">
+                            <img class="card-img-top" src="./images/img01.jpg" alt="blog image">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <strong>歡迎來臺灣</strong>
+                                </h4>
+                                <p class="card-text">「臺灣是亞洲的秘密寶石，任何時間來此造訪，都值回票價」，這是國際知名旅遊作家柯德（David Code）對臺灣的盛讚！</p>
+                                <p class="card-text">聯合國世界觀光組織UNWTO宣示2017年為「國際永續觀光發展年」！臺灣也正式啟動「2017生態旅遊年」，推出全國四季賞螢、賞鯨豚、賞候鳥、賞鷹、紫斑蝶等在地深度、生態旅遊體驗活動，更以主動營造螢火蟲棲地，成功爭取到「世界螢火蟲大會」在臺舉辦，這些無比豐富的生態旅遊精彩體驗，您絕對不能錯過！</p>
+                                <span class="d-block text-secondary mt-4 icon datetime">2017-12-31</span>
+                                <a href="blog-page.html" class="btn btn-outline-secondary mt-2 mb-1">繼續閱讀</a>
+                            </div>
                         </div>
-                    </a>
-                    <a href="shop.html" class="card">
-                        <img class="card-img-top" src="./images/services_4.jpg" alt="發泡板">
-                        <div class="card-body bg-dark">
-                            <h4 class="card-title text-white text-center">發泡板</h4>
+                    </div>
+                    <!-- 第四則文章/end -->
+                    <!-- 第五則文章/start -->
+                    <div class="col-12 col-sm-6">
+                        <div class="card">
+                            <img class="card-img-top" src="./images/img01.jpg" alt="blog image">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <strong>歡迎來臺灣</strong>
+                                </h4>
+                                <p class="card-text">「臺灣是亞洲的秘密寶石，任何時間來此造訪，都值回票價」，這是國際知名旅遊作家柯德（David Code）對臺灣的盛讚！</p>
+                                <p class="card-text">聯合國世界觀光組織UNWTO宣示2017年為「國際永續觀光發展年」！臺灣也正式啟動「2017生態旅遊年」，推出全國四季賞螢、賞鯨豚、賞候鳥、賞鷹、紫斑蝶等在地深度、生態旅遊體驗活動，更以主動營造螢火蟲棲地，成功爭取到「世界螢火蟲大會」在臺舉辦，這些無比豐富的生態旅遊精彩體驗，您絕對不能錯過！</p>
+                                <span class="d-block text-secondary mt-4 icon datetime">2017-12-31</span>
+                                <a href="blog-page.html" class="btn btn-outline-secondary mt-2 mb-1">繼續閱讀</a>
+                            </div>
                         </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- 產品分類/end -->
-    <!-- 熱門產品/start -->
-    <section class="container mt-5">
-        <div class="row">
-            <div class="col-12 mb-2">
-                <h2>熱門產品</h2>
-            </div>
-            <div class="col-12 col-sm-6 col-md-3">
-                <div href="#" class="card mb-3">
-                    <img class="card-img-top" src="./images/product/eva_1.jpg" alt="LTG-BY-0001">
-                    <div class="card-body">
-                        <h4 class="card-title">LTG-BY-0001</h4>
-                        <p class="card-text">專利樣式雙色登山拐杖握把，EVA發泡材質</p>
-                        <h5 class="card-text text-danger">
-                            <small class="text-secondary mr-2">
-                                <del>NT$&nbsp;600</del>
-                            </small>
-                            NT$&nbsp;500
-                        </h5>
-                        <a href="product.html" class="btn btn-outline-secondary btn-block">查看商品</a>
-                        <a href="cart.html" class="btn btn-outline-primary btn-block">加入購物車</a>
                     </div>
+                    <!-- 第五則文章/end -->
                 </div>
+                <!-- 第二則至第五則文章/end -->
             </div>
-            <div class="col-12 col-sm-6 col-md-3">
-                <div href="#" class="card mb-3">
-                    <img class="card-img-top" src="./images/product/eva_2.jpg" alt="TG-B-0001">
-                    <div class="card-body">
-                        <h4 class="card-title">TG-B-0001</h4>
-                        <p class="card-text">登山拐杖握把，EVA發泡材質</p>
-                        <h5 class="card-text text-danger">NT$&nbsp;500</h5>
-                        <a href="product.html" class="btn btn-outline-secondary btn-block">查看商品</a>
-                        <a href="cart.html" class="btn btn-outline-primary btn-block">加入購物車</a>
+            <!-- 部落格內容/end -->
+            <!-- 側邊欄/start -->
+            <div class="col-12 col-md-4">
+                <!-- 搜尋/start -->
+                <form action="" class="bg-white p-3 mb-3 border rounded">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="搜尋" aria-label="Search for">
+                        <span class="input-group-append">
+                            <button type="button" class="btn btn-secondary">Go!</button>
+                        </span>
                     </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-3">
-                <div href="#" class="card mb-3">
-                    <img class="card-img-top" src="./images/product/eva_3.jpg" alt="LTG-B-0001">
-                    <div class="card-body">
-                        <h4 class="card-title">LTG-B-0001</h4>
-                        <p class="card-text">登山拐杖握把，EVA發泡材質</p>
-                        <h5 class="card-text text-danger">NT$&nbsp;500</h5>
-                        <a href="product.html" class="btn btn-outline-secondary btn-block">查看商品</a>
-                        <a href="cart.html" class="btn btn-outline-primary btn-block">加入購物車</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-3">
-                <div href="#" class="card mb-3">
-                    <img class="card-img-top" src="./images/product/eva_4.jpg" alt="G-B-0001">
-                    <div class="card-body">
-                        <h4 class="card-title">G-B-0001</h4>
-                        <p class="card-text">登山拐杖握把，EVA發泡材質</p>
-                        <h5 class="card-text text-danger">NT$&nbsp;500</h5>
-                        <a href="product.html" class="btn btn-outline-secondary btn-block">查看商品</a>
-                        <a href="cart.html" class="btn btn-outline-primary btn-block">加入購物車</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-3">
-                <div href="#" class="card mb-3">
-                    <img class="card-img-top" src="./images/product/eva_5.jpg" alt="G-B-0002">
-                    <div class="card-body">
-                        <h4 class="card-title">G-B-0002</h4>
-                        <p class="card-text">登山拐杖握把，EVA發泡材質</p>
-                        <h5 class="card-text text-danger">NT$&nbsp;500</h5>
-                        <a href="product.html" class="btn btn-outline-secondary btn-block">查看商品</a>
-                        <a href="cart.html" class="btn btn-outline-primary btn-block">加入購物車</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-3">
-                <div href="#" class="card mb-3">
-                    <img class="card-img-top" src="./images/product/eva_6.jpg" alt="TU-BY-0001">
-                    <div class="card-body">
-                        <h4 class="card-title">TU-BY-0001</h4>
-                        <p class="card-text">專利樣式雙色EVA發泡套管</p>
-                        <h5 class="card-text text-danger">NT$&nbsp;500</h5>
-                        <a href="product.html" class="btn btn-outline-secondary btn-block">查看商品</a>
-                        <a href="cart.html" class="btn btn-outline-primary btn-block">加入購物車</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-3">
-                <div href="#" class="card mb-3">
-                    <img class="card-img-top" src="./images/product/eva_7.jpg" alt="MG-GO-0002">
-                    <div class="card-body">
-                        <h4 class="card-title">MG-GO-0002</h4>
-                        <p class="card-text">客製化雙色登山拐杖握把，EVA發泡材質</p>
-                        <h5 class="card-text text-danger">NT$&nbsp;500</h5>
-                        <a href="product.html" class="btn btn-outline-secondary btn-block">查看商品</a>
-                        <a href="cart.html" class="btn btn-outline-primary btn-block">加入購物車</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-3">
-                <div href="#" class="card mb-3">
-                    <img class="card-img-top" src="./images/product/eva_8.jpg" alt="LG-GP-0001">
-                    <div class="card-body">
-                        <h4 class="card-title">LG-GP-0001</h4>
-                        <p class="card-text">客製化雙色登山拐杖握把，EVA發泡材質</p>
-                        <h5 class="card-text text-danger">NT$&nbsp;500</h5>
-                        <a href="product.html" class="btn btn-outline-secondary btn-block">查看商品</a>
-                        <a href="cart.html" class="btn btn-outline-primary btn-block">加入購物車</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- 熱門產品/end -->
-    <!-- 關於岡南/start -->
-    <section class="container mt-5">
-        <div class="row">
-            <div class="col-12">
-                <h2>關於岡南</h2>
-            </div>
-            <div class="col-12">
-                <p>本公司創立於西元1980年，前身為岡南木業有限公司，期間經營各種內外銷高品質木製家具及木製品加工製造項目。後期因台灣家具木業外移至大陸地區生產製造，本公司基於社會責任並根留台灣力拼轉型，並於西元2003年轉型開發EVA材質之登山拐杖握把產品，並提供世界各大廠代工製造服務，因業務發展需要，公司於西元2014年變更為岡南塑膠發泡有限公司。我們將竭盡心力繼續以優良的服務及專業的技術及高度的品質來提供您最滿意的產品。歡迎您來電或來信與我們聯絡</p>
-            </div>
-        </div>
-    </section>
-    <!-- 關於岡南/end -->
-    <!-- google map/start -->
-    <section class="container-fluid mt-5">
-        <div class="row">
-            <div class="embed-responsive map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.005038298767!2d121.56232116500627!3d25.03390308397241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abb6da9c9e1f%3A0x1206bcf082fd10a6!2zMTEw5Y-w5YyX5biC5L-h576p5Y2A5L-h576p6Lev5LqU5q61N-iZn-WPsOWMlzEwMQ!5e0!3m2!1szh-TW!2stw!4v1516115087364"></iframe>
-            </div>
-        </div>
-    </section>
-    <!-- google map/end -->
-    <!-- 頁腳/start -->
-    <footer class="bg-dark">
-        <div class="container pt-3 pb-3">
-            <div class="row">
-                <!-- 選單連結/start -->
-                <div class="col-12 col-md-6 mb-3">
-                    <ul class="footer-menu">
-                        <li><a href="index.html">首頁</a></li>
-                        <li><a href="about.html">關於岡南</a></li>
-                        <li><a href="shop.html">產品商城</a></li>
-                        <li><a href="job.html">人力資源</a></li>
-                        <li><a href="contact.html">連絡我們</a></li>
-                        <li><a href="login.html">登入</a></li>
-                        <li><a href="cart.html">購物車</a></li>
-                        <li><a href="checkout.html">結帳</a></li>
+                </form>
+                <!-- 搜尋/end -->
+                <!-- 最新文章/start -->
+                <div class="bg-white p-3 mb-3 border rounded">
+                    <h5 class="mb-3">
+                        <strong>最新文章</strong>
+                    </h5>
+                    <ul class="list-category">
+                        <li class="media mb-3">
+                            <img src="./images/img01.jpg" alt="歡迎來臺灣" class="mr-3">
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">
+                                    <a href="#">歡迎來臺灣</a>
+                                </h5>
+                                <span class="d-block mt-3 text-secondary icon datetime">2017-12-31</span>
+                            </div>
+                        </li>
+                        <li class="media mb-3">
+                            <img src="./images/img01.jpg" alt="歡迎來臺灣" class="mr-3">
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">
+                                    <a href="#">歡迎來臺灣</a>
+                                </h5>
+                                <span class="d-block mt-3 text-secondary icon datetime">2017-12-31</span>
+                            </div>
+                        </li>
+                        <li class="media mb-3">
+                            <img src="./images/img01.jpg" alt="歡迎來臺灣" class="mr-3">
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">
+                                    <a href="#">歡迎來臺灣</a>
+                                </h5>
+                                <span class="d-block mt-3 text-secondary icon datetime">2017-12-31</span>
+                            </div>
+                        </li>
                     </ul>
                 </div>
-                <!-- 選單連結/end -->
-                <!-- 訂閱/start -->
-                <div class="col-12 col-md-6 mb-3">
-                    <h6 class="text-white">留下 E-mail，訂閱岡南塑膠發泡，可搶先獲得最新的資訊喔！</h6>
-                    <form action="">
-                        <input type="email" class="form-control mt-2 mb-2" placeholder="請輸入e-mail">
-                        <button type="submit" class="btn btn-primary float-right send-btn">傳送</button>
-                    </form>
+                <!-- 最新文章/end -->
+                <!-- 分類/start -->
+                <div class="bg-white p-3 mb-3 border rounded">
+                    <h5 class="mb-3">
+                        <strong>分類</strong>
+                    </h5>
+                    <ul class="list-category category">
+                        <li>
+                            <a href="#">臺灣
+                                <span class="badge badge-pill badge-secondary ml-2">10</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">旅遊
+                                <span class="badge badge-pill badge-secondary ml-2">1</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">小吃
+                                <span class="badge badge-pill badge-secondary ml-2">1</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">日本旅遊
+                                <span class="badge badge-pill badge-secondary ml-2">1</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <!-- 訂閱/end -->
-                <!-- 版權所有/start -->
-                <div class="col-12 mt-3">
-                    <p class="text-white text-center">© Copyright 2018 岡南塑膠發泡.</p>
+                <!-- 分類/end -->
+                <!-- 標籤雲/start -->
+                <div class="bg-white p-3 mb-3 border rounded">
+                    <h5 class="mb-3">
+                        <strong>標籤雲</strong>
+                    </h5>
+                    <ul class="list-category">
+                        <li class="d-inline-block tag">
+                            <a href="#">旅遊</a>
+                        </li>
+                        <li class="d-inline-block tag">
+                            <a href="#">臺灣旅遊</a>
+                        </li>
+                        <li class="d-inline-block tag">
+                            <a href="#">日本旅遊</a>
+                        </li>
+                    </ul>
                 </div>
-                <!-- 版權所有/end -->
+                <!-- 標籤雲/end -->
             </div>
+            <!-- 側邊欄/end -->
         </div>
+    </section>
+    <!-- 部落格與側邊欄/end -->
+    <!-- 頁腳/start -->
+    <footer class="bg-dark mt-5">
+        <p class="text-white text-center pt-2 pb-2 mb-0">@ 123LearnGo</p>
     </footer>
     <!-- 頁腳/end -->
 </body>
