@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-TW">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <link rel="stylesheet" href="css/bootstrap.min.css">  
+
+    <title>國發會</title>
+    <style>
+        .flex_container {
+            border:solid 5px rgb(216, 30, 30);
+            height:950px;
+            margin:2%;
+        }
+        .font {
+            color:#fff;
+            text-align:center;            
+            font-size:50px;
+            
+        }
+        .box {
+            background-color:rgb(124, 185, 25);
+            margin:0.5%;
+        width:275px;
+        }
+        .box_normal {    
+            /*        
+            height:200px;
+            */            
+            line-height:200px;
+        }
+        .box_short { 
+            /*           
+            height:100px;
+            */            
+            line-height:100px;
+        }
+        .box_long {
+            /*
+            height:300px; 
+            */           
+            line-height:300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex_container d-flex flex-wrap flex-row justify-content-evenly align-items-stretch">
+        <div class="font box box_normal">1</div>
+        <div class="font box box_short">2</div>
+        <div class="font box box_normal">3</div>
+        <div class="font box box_short">4</div>
+        <div class="font box box_long">5</div>
+        <div class="font box box_short">6</div>
+        <div class="font box box_normal">7</div>
+        <div class="font box box_short">8</div>
+        <div class="font box box_long">9</div>
+        <div class="font box box_normal">10</div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
