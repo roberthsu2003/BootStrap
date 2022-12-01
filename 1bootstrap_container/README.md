@@ -2,10 +2,11 @@
 ## 測試container
 - container (手機直100%,手機橫以上固定大小)
 - container-sm (手機直100%,手機橫以上固定大小)
-- container-md
-- container-lg
-- container-xl
-- container-fluid
+- container-md  (平版以上固定大小)
+- container-lg  (一般螢幕以上固定大小)
+- container-xl  (大螢幕以上固定大小)
+- container-xxl  (廣螢幕以上固定大小)
+- container-fluid (全部100%)
 
 ```
 <style>
