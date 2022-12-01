@@ -9,7 +9,7 @@
   
 
 1. [container](./1bootstrap_container)
-2. [gird_system](./2bootstrap_girdSystem)
+2. [gird_system](./2bootstrap_gridSystem)
 3. [content](./3content)
 4. [utility](./4utility)
 5. [practice](./5practice)
