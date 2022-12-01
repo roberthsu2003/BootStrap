@@ -1,7 +1,7 @@
 # container
 ## 測試container
-- container
-- container-sm
+- container (手機直100%,手機橫以上固定大小)
+- container-sm (手機直100%,手機橫以上固定大小)
 - container-md
 - container-lg
 - container-xl
