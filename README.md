@@ -9,7 +9,11 @@
   
 
 1. [container](./1bootstrap_container)
-2. [gird_system](./2bootstrap_gridSystem)
-3. [content](./3content)
-4. [utility](./4utility)
-5. [practice](./5practice)
+2. [12_grid](./2bootstrap_gridSystem)
+3. [對齊](./3columns)
+4. [間距](./4gutter)
+5. [css_grid](./5css_grid)
+6. [表格](./6form)
+7. [content](./7content)
+8. [utility](./8utility)
+9. [practice](./9practice)

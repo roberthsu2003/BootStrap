@@ -1,5 +1,5 @@
 # container
-## 測試container
+## 測試container-依據裝置螢幕大小設定container的大小
 - container (手機直100%,手機橫以上固定大小)
 - container-sm (手機直100%,手機橫以上固定大小)
 - container-md  (平版以上固定大小)
