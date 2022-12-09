@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display:flex</title>
+    <style type="text/css">
+        .flex_container {
+            display:flex;
+            flex-wrap:wrap;
+            border: solid 5px rgb(216, 30, 30);
+            height: 950px;
+            margin: 2%;
+        }
+
+        .font {
+            color: #fff;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .box {
+            background-color: rgb(124, 185, 25);
+            margin: 0.5%;
+            width: 275px;
+        }
+
+        .box_normal {
+            height: 200px;
+            line-height: 200px;
+        }
+
+        .box_short {
+            height: 100px;
+            line-height: 100px;
+        }
+
+        .box_long {
+            height: 300px;
+            line-height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex_container">
+        <div class="font box box_normal">1</div>
+        <div class="font box box_short">2</div>
+        <div class="font box box_normal">3</div>
+        <div class="font box box_short">4</div>
+        <div class="font box box_long">5</div>
+        <div class="font box box_short">6</div>
+        <div class="font box box_normal">7</div>
+        <div class="font box box_short">8</div>
+        <div class="font box box_long">9</div>
+        <div class="font box box_normal">10</div>
+    </div>
+</body>
+
+</html>
