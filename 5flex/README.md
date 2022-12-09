@@ -106,3 +106,63 @@
 - [範例](./flex_direction.html)
 
 ![](./images/pic4.png)
+
+### flex-flow
+
+- 整合flex-wrap,flex-direction
+- [範例](./flex_flow.html)
+
+```
+	flex-flow:column wrap
+```
+
+### justify-content
+
+- 水平對齊
+
+屬性值:
+- flex-start
+- center
+- flex-end
+- space-around
+- space-between
+- space-evenly
+
+```
+	justify-content:flex-start | flex-end | center | space-around | space-between | space-evenly
+```
+
+- [範例](./justify_content.html)
+
+![](./images/pic5.png)
+
+### align-items
+- 以一row內元素組為主,垂直對齊
+
+1. stretch(預設值,內元素不可以設定height)
+2. flex-start
+3. center
+4. flex-end
+5. baseline
+
+```
+	align-items:stretch | flex-start | flex-end | center | baseline;
+```
+
+- [範例](./align_items.html)
+
+
+![](./images/pic7.png)
+
+### align-content
+- 以 row為對齊單位
+
+```
+	flex-wrap:wrap;
+	align-content: stretch | flex-start | flex-end | center | space-around | space-between | space-evenly;
+```
+
+- [範例](./align_content.html)
+
+
+![](./images/pic8.png)
